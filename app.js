@@ -2,12 +2,16 @@ require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 
 const base = require("./lib/base");
 
-const Transfer = require("./services/transfer");
+const Messaging = require("./services/messaging");
+const Token = require("./services/token");
+const Insight = require("./services/insight");
 
 module.exports = (key) => {
   const request = base(key);
 
   return {
-    Transfer: new Transfer(request),
+    Messaging: new Messaging(request),
+    Token: new Token(request),
+    Insight: new Insight(request),
   };
 };
