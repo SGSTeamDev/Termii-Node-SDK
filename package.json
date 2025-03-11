@@ -23,6 +23,15 @@
     "url": "https://github.com/SGSTeamDev/Termii-Node-SDK/issues"
   },
   "homepage": "https://github.com/SGSTeamDev/Termii-Node-SDK#readme",
+  "keywords": [
+    "sms",
+    "whatsapp",
+    "messaging",
+    "token",
+    "verification",
+    "insights",
+    "specialman"
+  ],
   "dependencies": {
     "axios": "^1.8.1",
     "dotenv": "^8.6.0"
